@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+var area;
+
+function area_of_triangle (b, h) {
+	
+	b = prompt ("What is the base of the triangle?");
+	b = parseInt(b);
+	h = prompt ("What is the height of the triangle?");
+	h = parseInt(h);
+	area = 0.5 * b * h;
+	return area;
+}
+
+var result = area_of_triangle();
+console.log ("The area of the triangle is " + area);
+
+</script>
+
+</body>
+</html>
