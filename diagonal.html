@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="sketch" width="800" height="600">
+</canvas>
+<script>
+document.addEventListener('DOMContentLoaded', main);
+
+function main () {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	x = 0;
+	y = 0;
+	size = 20;
+	
+
+	for (var i = 0; i <= 4; i++) { //rows
+		for  (var j = 0; j <= 4; j++) { //columns
+			
+			if ( i == j) {
+				context.fillStyle = "#FFCC33";
+			}
+			else {
+				context.fillStyle = "#0066CC"
+			}
+
+			y = i * 30;
+			x = j * 30;
+
+
+			context.fillRect(x, y, size, size);
+			
+		}
+	}
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
